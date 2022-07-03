@@ -1,0 +1,172 @@
+/* RESET ESTILOS */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    }
+/* FUENTE */
+.fuente {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* FOOTER PARA DESKTOP */
+@media only screen and (min-width : 481px) {
+#hamburguesa {
+	display: none;
+}
+}
+
+/* FOOTER PARA CELULAR */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+#futer {
+    display: flex;
+    justify-content: center;
+    object-fit:scale-down;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+header {
+    margin: 20px;
+    padding: 20px;
+}
+main {
+    margin: 15px;
+}
+#cabecera {
+    display: none;
+}
+
+#loguito {
+    width: 100%;
+	height: 100%;
+	object-fit:scale-down;
+	border: rad;
+	justify-content: center;
+	border-radius: 12px;
+    padding: 5px;
+}
+/*LOGO ROTATORIO*/
+}
+.rosca {
+    width: 100px;
+    height: 100px;
+    animation-name: girar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear; 
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+/*BANNER GIRATORIO*/
+.banner {
+	background: cadetblue;
+	height: 200px;
+}
+.rolling-text-wrapper {
+	white-space: nowrap;
+	padding: 75px 0px 75px 0px;
+	font-size: 50px;
+	font-weight: 500;
+	color: white;
+	overflow: hidden;
+	position: relative;
+}
+.content-rolling-text {
+	animation: rolltext 15s linear infinite both;
+	color: white;
+	margin: 0;
+	white-space: nowrap;
+	display: inline-flex;
+	overflow: visible;
+}
+#rolltext {
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+@keyframes bounce {
+	from {
+		transform: initial;
+	}
+	to {
+		transform: translateY(5px);
+	}
+	}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+		to {
+		transform: rotate(359deg);
+	}
+	}
+@keyframes wave {
+	0% {
+		transform: translate(3px,3px);
+	}
+	20%{
+		transform: translate(-2px,2px);
+	}
+	40%{
+		transform: translate(-3px,1px);
+	}
+	60%{
+		transform: translate(-2px,-2px);
+	}
+	80%{
+		transform: translate(1px,2px);
+	}
+	100% {
+		transform: translate(3px,3px);
+	}
+	}
+@keyframes rolltext {
+	from{
+		transform: translate3d(0,0,0);
+	}
+	to{
+		transform: translate3d(-50%,0,0);
+	}
+	}
+@keyframes hideToLeft {
+	from{
+		transform: translateX(0%);
+	}
+	to{
+		transform: translateX(-100%);
+	}
+}
+
+/* LINKS CABECERA */
+#linkslogo {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+#linkslogo:hover {
+    color: black;
+    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+    animation: heartBeat;
+    animation-duration: 5s; 
+  } 
+#linkslogo:visited {
+  color: #800080;
+} 
+#linkslogo--active {
+    font-weight: 600;
+    color: black;
+}
+
